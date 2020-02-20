@@ -161,17 +161,7 @@
 							}
 						 ?>
 
-<!--
-								<tr>	
-									<th><?php  echo $biodata['nama']?></th>
-									<th><?php  echo $biodata['panggilan']?></th>
-									<th><?php  echo $biodata['tanggal_lahir']?></th>
-									<th><?php  echo $biodata['jk']?></th>
-									<th><?php  echo $biodata['kota']?></th>
-									<th><?php  echo $biodata['telp']?></th>
-									<th><?php  echo $biodata['alamat']?></th>
-								</tr>		
--->
+
 		 				</tbody>
 		 			</table>
 		 		</div>
