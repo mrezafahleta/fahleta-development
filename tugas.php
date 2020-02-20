@@ -14,36 +14,38 @@
 
 
 		<form action="" method="POST" class="" >
+	<!-- 	Menampilkan Nama Bulan dalam Bahasa Indonesia	 -->
 			<label for="">Click Tombol Tampilkan Untuk menampilkan Bulan</label>
 			<label for="" name="bulan" ></label>
 			<br>
 			<button class="btn btn-primary" name="tampilkan">Tampilkan</button>
 
-	<?php 
-	$bulan = date('m');
-	switch ($bulan) {
-		case '01' : $bulan = "Januari"; break;
-		case '02' : $bulan = "Februari"; break;
-		case '03' : $bulan = "Maret"; break;
-		case '04' : $bulan = "April"; break;
-		case '05' : $bulan = "Mei"; break;
-		case '06' : $bulan = "Juni"; break;
-		case '07' : $bulan = "Juli"; break;
-		case '08' : $bulan = "Agustus"; break;
-		case '09' : $bulan = "September"; break;
-		case '10' : $bulan = "Oktober"; break;
-		case '11' : $bulan = "November"; break;
-		case '12' : $bulan = "Desember"; break;
+			<?php 
+			$bulan = date('m');
+			switch ($bulan) {
+				case '01' : $bulan = "Januari"; break;
+				case '02' : $bulan = "Februari"; break;
+				case '03' : $bulan = "Maret"; break;
+				case '04' : $bulan = "April"; break;
+				case '05' : $bulan = "Mei"; break;
+				case '06' : $bulan = "Juni"; break;
+				case '07' : $bulan = "Juli"; break;
+				case '08' : $bulan = "Agustus"; break;
+				case '09' : $bulan = "September"; break;
+				case '10' : $bulan = "Oktober"; break;
+				case '11' : $bulan = "November"; break;
+				case '12' : $bulan = "Desember"; break;
 
-	}
-	if(isset($_POST['tampilkan'])){
-		echo "<label class=''> Bulan : $bulan </label>";
-	
-	}
-?>
+			}
+			if(isset($_POST['tampilkan'])){
+				echo "<label class=''> Bulan : $bulan </label>";
+
+			}
+			?>
+		<!-- 	Akhir Tampilkan bulan -->
 		<hr>
 	
-		
+	<!-- 	Menampilkan Bilangan Ganjil dan Genap	 -->
 			<div class="form-group">
 				<label for="" >Masukkan Angka Bilangan</label>
 				<input type="text" class="form-control" style="width:200px;" name="angka">
@@ -67,8 +69,9 @@
 				}		
 			}
 		 ?> 
+		<!-- 	Akhir menampilkan bilangan ganjil dan genap	-->
 		 <hr>
-		
+		<!--	Biodata  -->
 		 	<div class="row">
 		 		<div class="col-4">
 		 			<div class="card bg-primary  my-5 text-center" style="width:;">
@@ -173,10 +176,10 @@
 		 			</table>
 		 		</div>
 		 	</div>
-
+			<!-- 	Akhir Menampilkan Biodata	 -->
 
 		 	<hr>	
-
+		<!-- 	Menampilkan Hari dan tanggal dalam bahasa indonesia	 -->
 
 		 	 <button class="btn btn-primary" name="fungsi_tanggal">Tampilkan fungsi tanggal</button>
 		 	 <?php 	
@@ -224,6 +227,8 @@
                 }
 		 		
 		 	 ?>
+			
+		<!-- 	Akhir Menampilkan hari dan tanggal dalam bahasa indonesia	-->
 		</form>
 	</div>  	
 	
